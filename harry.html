@@ -6,18 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="First html page" />
     <meta name="keywords" content="Html page, html" />
-    <title>css </title>
-    <!-- between external style sheet and internal style sheet
-    the one at the bottom will override the top one of same property -->
+    <title>css selectors</title>
     <link rel="stylesheet" href="style.css" />
     <style>
+      /* Element selector */
       p{
+        color: aqua;
+      }
+
+      /* id selector */
+      #hcolor{
         color: blueviolet;
       }
+
+      /* class selector */
+      .pborder{
+        background-color: black;
+        border-style: dotted;
+        border-color: brown;
+      }
+
+
+      /* group selector using comma*/
+      span, footer{
+        color: blue;
+      }
+
     </style>
   </head>
   <body>
-    <!-- Inline css highest priority but not recommended -->
-    <p style="border: 10px; background-color: aqua; color: blue;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste delectus ea voluptatum suscipit, odit corporis id sint nam numquam commodi possimus amet rem molestias ipsa, aliquid natus quo, magnam veniam soluta fugiat? Culpa inventore soluta et perferendis rerum. Iure accusantium illo, laboriosam quibusdam in laborum fuga dolorem error voluptas pariatur tempore doloremque veritatis maiores et culpa quas nihil quae rem vel! Sequi, qui obcaecati omnis corrupti ab aliquid amet eveniet error deserunt dolorum velit eligendi nam, pariatur a fugit, architecto accusantium natus. Impedit aperiam laboriosam molestias placeat, laudantium aliquam et suscipit ad labore dolore officiis illo, rerum dignissimos a quia.</p>
+    <h1>Heading h1</h1>
+    <h1 id="hcolor">Heading h1 second time</h1>
+    <p class="pborder">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste delectus ea voluptatum suscipit, odit corporis id sint nam numquam commodi possimus amet rem molestias ipsa, aliquid natus quo, magnam veniam soluta fugiat? Culpa inventore soluta et perferendis rerum. Iure accusantium illo, laboriosam quibusdam in laborum fuga dolorem error voluptas pariatur tempore doloremque veritatis maiores et culpa quas nihil quae rem vel! Sequi, qui obcaecati omnis corrupti ab aliquid amet eveniet error deserunt dolorum velit eligendi nam, pariatur a fugit, architecto accusantium natus. Impedit aperiam laboriosam molestias placeat, laudantium aliquam et suscipit ad labore dolore officiis illo, rerum dignissimos a quia.</p>
+    <p class="pborder">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste delectus ea voluptatum suscipit, odit corporis id sint nam numquam commodi possimus amet rem molestias ipsa, aliquid natus quo, magnam veniam soluta fugiat? Culpa inventore soluta et perferendis rerum. Iure accusantium illo, laboriosam quibusdam in laborum fuga dolorem error voluptas pariatur tempore doloremque veritatis maiores et culpa quas nihil quae rem vel! Sequi, qui obcaecati omnis corrupti ab aliquid amet eveniet error deserunt dolorum velit eligendi nam, pariatur a fugit, architecto accusantium natus. Impedit aperiam laboriosam molestias placeat, laudantium aliquam et suscipit ad labore dolore officiis illo, rerum dignissimos a quia.</p>
+    <p class="pborder">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste delectus ea voluptatum suscipit, odit corporis id sint nam numquam commodi possimus amet rem molestias ipsa, aliquid natus quo, magnam veniam soluta fugiat? Culpa inventore soluta et perferendis rerum. Iure accusantium illo, laboriosam quibusdam in laborum fuga dolorem error voluptas pariatur tempore doloremque veritatis maiores et culpa quas nihil quae rem vel! Sequi, qui obcaecati omnis corrupti ab aliquid amet eveniet error deserunt dolorum velit eligendi nam, pariatur a fugit, architecto accusantium natus. Impedit aperiam laboriosam molestias placeat, laudantium aliquam et suscipit ad labore dolore officiis illo, rerum dignissimos a quia.</p>
+    <div>
+      <p>This is div a small paragraph</p>
+    </div>
+    <span>this is a spanning element</span>
+    <footer>This is a footer</footer>
   </body>
 </html>
