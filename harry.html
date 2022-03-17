@@ -6,30 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="First html page" />
     <meta name="keywords" content="Html page, html" />
-    <title>css fonts</title>
-    <!-- using external web fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <title>css colors</title>
     <link rel="stylesheet" href="style.css" />
     <style>
-      p{
-        /* It falls back on the fonts in this list If starting font not found */
-        font-family:'Oswald', 'Times New Roman', Times, serif;
+      /* color by name */
+      #p1{
+        color: red;
       }
-      span{
-        font-weight: bolder;
-        font-style: italic;
+      /* color by rgb value */
+      #p2{
+        color: rgb(10, 255, 10);
       }
+      /* color by hex value */
+      #p3{
+        color: #10F0F0;
+      }
+      
     </style>
   </head>
   <body>
     <h1>Heading h1</h1>
     <h1 >Heading h1 second time</h1>
-    <p >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste delectus ea voluptatum suscipit, odit corporis id sint nam numquam commodi possimus amet rem molestias ipsa, aliquid natus quo, magnam veniam soluta fugiat? Culpa inventore soluta et perferendis rerum. Iure accusantium illo, laboriosam quibusdam in laborum fuga dolorem error voluptas pariatur tempore doloremque veritatis maiores et culpa quas nihil quae rem vel! Sequi, qui obcaecati omnis corrupti ab aliquid amet eveniet error deserunt dolorum velit eligendi nam, pariatur a fugit, architecto accusantium natus. Impedit aperiam laboriosam molestias placeat, laudantium aliquam et suscipit ad labore dolore officiis illo, rerum dignissimos a quia.</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste delectus ea voluptatum suscipit, odit corporis id sint nam numquam commodi possimus amet rem molestias ipsa, aliquid natus quo, magnam veniam soluta fugiat? Culpa inventore soluta et perferendis rerum. Iure accusantium illo, <span>This SPAN</span> laboriosam quibusdam in laborum fuga dolorem error voluptas pariatur tempore doloremque veritatis maiores et culpa quas nihil quae rem vel! Sequi, qui obcaecati omnis corrupti ab aliquid amet eveniet error deserunt dolorum velit eligendi nam, pariatur a fugit, architecto accusantium natus. Impedit aperiam laboriosam molestias placeat, laudantium aliquam et suscipit ad labore dolore officiis illo, rerum dignissimos a quia.</p>
-    <div>
-      <p>This is div a small paragraph</p>
-    </div>
-    <span>this is a spanning element</span>
-    <footer>This is a footer</footer>
+    <p id="p1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde voluptas voluptatum nesciunt vero ab, ex praesentium quam ullam ea expedita assumenda culpa voluptates! At, dolorum incidunt repudiandae perferendis aliquid ex provident. Maxime, eligendi sint! Repellendus voluptate, nemo quibusdam velit dolores modi eveniet sed maiores, sequi officiis corporis amet consectetur debitis!</p>
+    <p id="p2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus sunt possimus illo eligendi dignissimos et veritatis laborum, beatae molestiae voluptatibus. Neque excepturi eaque ea tempora dolore nemo numquam magni vitae.
+    Obcaecati ut maxime adipisci aliquid vel, quisquam reprehenderit nam ab magni alias minus mollitia nemo unde sed! Aspernatur sit asperiores atque? Facilis modi eaque repellendus quaerat minima ut, voluptas ipsam!</p>
+    <p id="p3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla maiores ducimus nesciunt explicabo reprehenderit! Magni aperiam deserunt officiis illum animi, at officia eum reiciendis quam repellat nobis alias ipsa! Exercitationem.
+    Accusantium quisquam enim necessitatibus dolore natus ab ea vitae architecto, ipsum earum at ad similique consequuntur corrupti expedita omnis quaerat! Totam quos, at asperiores labore dicta in animi dolor illum.
+    Fugit provident natus sit sint vitae modi mollitia molestiae nemo numquam, vero corrupti illo quis est sunt iste, ea excepturi? Vel id, numquam fugit voluptatibus repellat error. Tenetur, error velit!</p>
   </body>
 </html>
