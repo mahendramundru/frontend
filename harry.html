@@ -6,11 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="First html page" />
     <meta name="keywords" content="Html page, html" />
-    <title>html entities</title>
+    <title>css </title>
+    <!-- between external style sheet and internal style sheet
+    the one at the bottom will override the top one of same property -->
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <style>
+      p{
+        color: blueviolet;
+      }
+    </style>
   </head>
   <body>
-    <div>Html entities are written using &comma; &lt; &#x0002C; &gt; &nbsp; &#44; 4&sup2;</div>
+    <!-- Inline css highest priority but not recommended -->
+    <p style="border: 10px; background-color: aqua; color: blue;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste delectus ea voluptatum suscipit, odit corporis id sint nam numquam commodi possimus amet rem molestias ipsa, aliquid natus quo, magnam veniam soluta fugiat? Culpa inventore soluta et perferendis rerum. Iure accusantium illo, laboriosam quibusdam in laborum fuga dolorem error voluptas pariatur tempore doloremque veritatis maiores et culpa quas nihil quae rem vel! Sequi, qui obcaecati omnis corrupti ab aliquid amet eveniet error deserunt dolorum velit eligendi nam, pariatur a fugit, architecto accusantium natus. Impedit aperiam laboriosam molestias placeat, laudantium aliquam et suscipit ad labore dolore officiis illo, rerum dignissimos a quia.</p>
   </body>
 </html>
