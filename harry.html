@@ -6,50 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="First html page" />
     <meta name="keywords" content="Html page, html" />
-    <title>css pseduo selectors elements, classes</title>
+    <title>css float and clear</title>
     <link rel="stylesheet" href="style.css" />
     <style>
      
+     *{
+      box-sizing: border-box;
+     }
       .container{
         background-color: rgba(113, 79, 79, 0.4);
         border: 3px solid black;
         margin: 2px;
+        padding: 10px;
+        width: 1200px;
       }
 
-      .btn{
+      /* inside class container for elements p */
+     .container p{
+       
+       /* border: 3px solid rgb(154, 182, 29); */
+       /* margin: 4px; */
+       text-align: justify;
+      }
+      #p1{
         background-color: antiquewhite;
-        border: none;
-        padding: 4px;
-        text-decoration: none; /* to remove underline in hyperlink */
+        float: left;
+        width: 50%;
       }
-
-      /* pseduo classes using : */
-      .btn:hover{
+      #p2{
         background-color: aqua;
+        float: left;
+        width: 50%;
       }
-      .btn:active{
-        background-color: blueviolet;
+      #p3{
+        background-color: aquamarine;
+        clear: both;
+        width: 100%;
       }
-
-      /*pseduo elements using :: */
-      #p1::first-letter{
-        font-size: 100px;
-      }
-
-      #p2::first-line{
-        font-style: italic;
-      }
-
 
       
-
     </style>
   </head>
   <body>
     <h1>Heading h1</h1>
     <h1>Heading h1 second time</h1>
-    <input class="btn" type="button" value="Button">
-    <a class="btn" href="http://www.google.com" target="_blank">Link</a>
     <div class="container">
       <p id="p1">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde voluptas
@@ -59,8 +59,6 @@
         quibusdam velit dolores modi eveniet sed maiores, sequi officiis
         corporis amet consectetur debitis!
       </p>
-    </div>
-    <div class="container">
       <p id="p2">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus sunt
         possimus illo eligendi dignissimos et veritatis laborum, beatae
@@ -70,9 +68,6 @@
         Aspernatur sit asperiores atque? Facilis modi eaque repellendus quaerat
         minima ut, voluptas ipsam!
       </p>
-    </div>
-
-    <div class="container">
       <p id="p3">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla maiores
         ducimus nesciunt explicabo reprehenderit! Magni aperiam deserunt
@@ -85,7 +80,6 @@
         iste, ea excepturi? Vel id, numquam fugit voluptatibus repellat error.
         Tenetur, error velit!
       </p>
-
     </div>
   </body>
 </html>
