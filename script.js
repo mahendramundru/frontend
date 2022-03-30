@@ -1,22 +1,14 @@
-//variable overriding in variable environment
-x = 1;
-
-a();
-b();
-
-console.log(x);
+//default global execution environment is window or this at global level
+// anything not inside a function is in global environment
+var x = 1;
 
 function a(){
-    var x = 10;
-    console.log(x);
+    var y = 3;
 }
 
-function b(){
-    var x = 100;
-    console.log(x);
-}
+console.log(x);
+console.log(window.x);
+console.log(this.x);
+console.log(this.a);
+console.log(this == window);
 
-function c(){
-    console.log(x); //gives undefined
-    var x = 1000;
-}
