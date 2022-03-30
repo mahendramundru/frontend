@@ -6,80 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="First html page" />
     <meta name="keywords" content="Html page, html" />
-    <title>css float and clear</title>
+    <title>css navigation bar</title>
     <link rel="stylesheet" href="style.css" />
     <style>
-     
-     *{
-      box-sizing: border-box;
-     }
-      .container{
-        background-color: rgba(113, 79, 79, 0.4);
-        border: 3px solid black;
-        margin: 2px;
-        padding: 10px;
-        width: 1200px;
-      }
-
-      /* inside class container for elements p */
-     .container p{
-       
-       /* border: 3px solid rgb(154, 182, 29); */
-       /* margin: 4px; */
-       text-align: justify;
-      }
-      #p1{
-        background-color: antiquewhite;
-        float: left;
-        width: 50%;
-      }
-      #p2{
+      #container {
         background-color: aqua;
+        overflow: auto;
+      }
+      #container li {
+        list-style: none;
+      }
+      #container a {
         float: left;
-        width: 50%;
+        text-decoration: none;
+        padding: 5px;
+        margin: 5px;
       }
-      #p3{
-        background-color: aquamarine;
-        clear: both;
-        width: 100%;
+      #search {
+        float: right;
       }
-
-      
     </style>
+    <script src="script.js"></script>
+    
   </head>
   <body>
-    <h1>Heading h1</h1>
-    <h1>Heading h1 second time</h1>
-    <div class="container">
-      <p id="p1">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde voluptas
-        voluptatum nesciunt vero ab, ex praesentium quam ullam ea expedita
-        assumenda culpa voluptates! At, dolorum incidunt repudiandae perferendis
-        aliquid ex provident. Maxime, eligendi sint! Repellendus voluptate, nemo
-        quibusdam velit dolores modi eveniet sed maiores, sequi officiis
-        corporis amet consectetur debitis!
-      </p>
-      <p id="p2">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus sunt
-        possimus illo eligendi dignissimos et veritatis laborum, beatae
-        molestiae voluptatibus. Neque excepturi eaque ea tempora dolore nemo
-        numquam magni vitae. Obcaecati ut maxime adipisci aliquid vel, quisquam
-        reprehenderit nam ab magni alias minus mollitia nemo unde sed!
-        Aspernatur sit asperiores atque? Facilis modi eaque repellendus quaerat
-        minima ut, voluptas ipsam!
-      </p>
-      <p id="p3">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla maiores
-        ducimus nesciunt explicabo reprehenderit! Magni aperiam deserunt
-        officiis illum animi, at officia eum reiciendis quam repellat nobis
-        alias ipsa! Exercitationem. Accusantium quisquam enim necessitatibus
-        dolore natus ab ea vitae architecto, ipsum earum at ad similique
-        consequuntur corrupti expedita omnis quaerat! Totam quos, at asperiores
-        labore dicta in animi dolor illum. Fugit provident natus sit sint vitae
-        modi mollitia molestiae nemo numquam, vero corrupti illo quis est sunt
-        iste, ea excepturi? Vel id, numquam fugit voluptatibus repellat error.
-        Tenetur, error velit!
-      </p>
+    <div id="container">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Organization</a></li>
+        <li><a href="">Support</a></li>
+        <li><a href="">Feedback</a></li>
+        <input
+          type="text"
+          name="search"
+          id="search"
+          placeholder="Search Here"
+        />
+      </ul>
     </div>
   </body>
 </html>
