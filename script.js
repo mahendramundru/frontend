@@ -1,21 +1,36 @@
-//let and const keywords introduced in ES6 version of javascript
-// let is similar to variable in java/c etc
-// const is constant initialized while declaring and can't change later
-// don't use var, use let whenver possible
-// temporal dead zone : variable declared using let but till initialized it can't be accessed (and also they are not stored in global environment)
+//function scope will create fresh variables for var, const, let
+function f1(){
+    var a1 = 1;
+    f2();
+    function f2(){
+        var a2 = 2;
+        console.log(a2);
+        console.log(a1);
+        console.log(a0);
+    }
+}
 
-console.log(a);//Uncaught ReferenceError: Cannot access 'a' before initialization
-let a; //initialized with undefined
+
+var a;
+var a0 = 0;
 console.log(a);
-a = 5;
-console.log(a);
+var a1 = 10;
+console.log(a0);
+console.log(a1);
+//for var: block scope does not create new variables with same name rather modifies the existing var value
+{
+    var a1 = 10000;
 
-const c = 100;
-console.log(c);
+}
 
-console.log(v);
-var v;
-console.log(v);
-v = 1000;
-console.log(v);
+//for let,const: block scope {} shadows the parent only within the block
+let x1 = 11;
+{
+    let x1 = 12;
+    console.log(x1);
+}
+console.log(x1);
+
+f1();
+console.log(a1);
 
