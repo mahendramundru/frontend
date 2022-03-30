@@ -1,20 +1,21 @@
-//lexical environment
-// global environment -> f1 environment local -> f2 environment local 
-// f2 can access variables in its scope and varibles in parent scope, and so on until variables in global scope
-function f1(){
-    var a1 = 1;
-    f2();
-    function f2(){
-        var a2 = 2;
-        console.log(a2);
-        console.log(a1);
-        console.log(a0);
-    }
-}
+//let and const keywords introduced in ES6 version of javascript
+// let is similar to variable in java/c etc
+// const is constant initialized while declaring and can't change later
+// don't use var, use let whenver possible
+// temporal dead zone : variable declared using let but till initialized it can't be accessed (and also they are not stored in global environment)
 
-var a0 = 0;
-var a1 = 10;
-console.log(a0);
-console.log(a1);
-f1();
+console.log(a);//Uncaught ReferenceError: Cannot access 'a' before initialization
+let a; //initialized with undefined
+console.log(a);
+a = 5;
+console.log(a);
+
+const c = 100;
+console.log(c);
+
+console.log(v);
+var v;
+console.log(v);
+v = 1000;
+console.log(v);
 
