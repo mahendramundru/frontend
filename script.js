@@ -1,4 +1,4 @@
-for(var i=1; i<=10; i++){  // for each iteration it creates a separate i
+for(var i=1; i<=10; i++){  
     setTimeout(function(x){ //here this x is an argument within the function scope
         console.log(x); // for each of this inner function has a separate let i
         
