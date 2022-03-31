@@ -1,7 +1,6 @@
 for(var i=1; i<=10; i++){  // for each iteration it creates a separate i
-    setTimeout(function(){
+    setTimeout(function(i){
         console.log(i); // for each of this inner function has a separate let i
-        i = i + 1;
-    }, i*1000);
+        
+    }, i*1000, i);
 }
-i = 1;
